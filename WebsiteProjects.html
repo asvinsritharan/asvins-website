@@ -2,7 +2,7 @@
 	<head>
 	
 		<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet"> 
-		<title>Home</title>
+		<title>Projects</title>
 		
 		<style type="text/css">
 			#header1 {
@@ -78,11 +78,8 @@
 			#projectsquestions {
 				font-family: 'IBM Plex Sans', sans-serif;
 				font-size: 100%;
-                
                 font-weight: bold;
-            
 				color: #3f4239;
-				position: relative;
 			}
             #projectsanswers {
 				font-family: 'IBM Plex Sans', sans-serif;
@@ -94,13 +91,18 @@
             #projectquestionsmargins {
                 float: left;
                 width: 15%;
-                margin-left: 425px;
+                margin-left: 33%;
             }
             #projectanswersmargins {
                 float: right;
-                width: 35%;
-                margin-right: 200px;
+                width: 45%;
+                margin-right: 5%;
             }
+			#projectqamargins {
+				height: 40%;
+				margin-left:20%;
+				margin-right:20%;
+			}
 			
 			
 			
@@ -108,7 +110,7 @@
 		</style>
 	</head>
 	
-	<body style="margin: 0;background-color:#F0F0F0">
+	<body style="margin: 0;background-color:#edede8">
 		<div id="header1">
 			<p id= "headertext">Asvin's Site </p>
 		</div>
@@ -125,41 +127,58 @@
 		<div id="projects">
 			<h1> Project Highlights </h1>
 		</div>
-		<div id="projectmargins">
-            <p id="projectname"> Facial Recognition </p>
-            <div id="projectquestionsmargins">
-                <p id="projectsquestions">Description</p>
-            
-                <p id="projectsquestions" style="padding-top: 140;">Language</p>
-            
-                <p id="projectsquestions">Classification Method</p>
-            </div>
-            
-            <div id="projectanswersmargins">
-                <p id="projectsanswers"> This is a script which learns faces based on facial characteristics. The user provides the script with a location which contains images of people, then labels them through prompts in the script. A picture can then by provided to the script of a person previously labelled by the user. The script will match facial characteristics of the face in the picture with the model created by the script to determine the matching label of the person in the user provided picture.</p>
-                <p id="projectsanswers">Python</p>
-                <p id="projectsanswers">Principle Component Analysis (PCA)</p>
-            </div>
-		</div>
-        
-        
-		<div id="projectmargins">
-            <p id="projectname"> Number Identifier </p>
-            <div id="projectquestionsmargins">
-                <p id="projectsquestions">Description</p>
-            
-                <p id="projectsquestions" style="padding-top: 80;">Language</p>
-            
-                <p id="projectsquestions">Classification Method</p>
-            </div>
-            
-            <div id="projectanswersmargins">
-                <p id="projectsanswers"> This script uses the MNIST written number dataset to train the KNN model. Upon completion of the creation of the model, the user can provide a number to the script when prompted, then the model will provide it's prediction to the number that was written on the image. </p>
-                <p id="projectsanswers">Python</p>
-                <p id="projectsanswers">K Nearest Neighbours (KNN)</p>
-            </div>
-		</div>
 		
+		
+		<div id="projectqamargins" style = "margin-top: 200; height: 35%">
+			<p id="projectname"> Facial Recognition </p>
+			<div id="projectquestionsmargins">
+				<p id="projectsquestions">Description</p>
+			</div>
+			<div id="projectanswersmargins">
+				<p id="projectsanswers"> This is a script which learns faces based on facial characteristics. The user provides the script with a location which contains images of people, then labels them through prompts in the script. A picture can then by provided to the script of a person previously labelled by the user. The script will match facial characteristics of the face in the picture with the model created by the script to determine the matching label of the person in the user provided picture.</p>
+			</div>
+		</div>
+		<div id="projectqamargins" style = "height: 8%">
+			<div id="projectquestionsmargins">
+				<p id="projectsquestions">Language</p>
+			</div>
+			<div id="projectanswersmargins">
+				<p id="projectsanswers">Python</p>
+			</div>
+		</div>
+		<div id="projectqamargins" style = "height: 8%">
+			<div id="projectquestionsmargins">
+				<p id="projectsquestions">Classification Method</p>
+			</div>
+			<div id="projectanswersmargins">
+				<p id="projectsanswers">Principal Component Analysis (PCA)</p>
+			</div>
+		</div>
+		<div id="projectqamargins" style =  "height: 27%">
+			<p id="projectname"> Number Identifier </p>
+			<div id="projectquestionsmargins">
+				<p id="projectsquestions">Description</p>
+			</div>
+			<div id="projectanswersmargins">
+                <p id="projectsanswers"> This script uses the MNIST written number dataset to train the KNN model. Upon completion of the creation of the model, the user can provide a number to the script when prompted, then the model will provide it's prediction to the number that was written on the image. </p>
+			</div>
+		</div>
+		<div id="projectqamargins" style = "height: 8%">
+			<div id="projectquestionsmargins">
+				<p id="projectsquestions">Language</p>
+			</div>
+			<div id="projectanswersmargins">
+				<p id="projectsanswers">Python</p>
+			</div>
+		</div>
+		<div id="projectqamargins" style = "height: 8%">
+			<div id="projectquestionsmargins">
+				<p id="projectsquestions">Classification Method</p>
+			</div>
+			<div id="projectanswersmargins">
+				<p id="projectsanswers">K Nearest Neighbours (KNN)</p>
+			</div>
+		</div>
 		
 	</body>
 </html>
