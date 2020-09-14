@@ -57,7 +57,6 @@
 			#aboutMeHeader {
 
 				min-width:1200px;
-				min-height:21%;
 				width: 100%;
 				height: 50px;
 				position: relative;
@@ -139,6 +138,48 @@
 				text-align: center;
 				margin-bottom: -15;
 			}
+			#bottomBar {
+				width: 100%;
+				float: left;
+				background-color: #FFFFFF;
+				margin-top: 50px;
+				color: #b6b6b6;
+				font-family: 'Adamina', serif;
+				min-width:1200px;
+			}
+			#bottomLeftColumn {
+				float: left;
+				width: 50%;
+			}
+			#bottomRightColumn {
+				float: right;
+				width: 50%;
+			}
+			#bottomLeftHeader {
+				font-weight: bold;
+				font-size: 120%;
+				margin-bottom: 0;
+				float: right;
+				padding-right: 5%;
+			}
+			#bottomRightHeader {
+				font-weight: bold;
+				font-size: 120%;
+				margin-bottom: 0;
+				float: left;
+				padding-left: 5%;
+			}
+
+			#bottomLeftContent {
+				float: right;
+				padding-right: 5%;
+				margin-bottom: -5;
+			}
+			#bottomRightContent {
+				float: left;
+				padding-left: 5%;
+				margin-bottom: -5;
+			}
 
 
 		</style>
@@ -149,15 +190,15 @@
 				<p id= "titleText">Asvin's Site</p>
 			</div>
 			<div id = "tabPadding">
-				<a href="Home.html"><div id = "tab">
-					<p id = "tabText">HOME</p>
-				</div></a>
+				<div id = "tab">
+					<a href="Home.html"><p id = "tabText">HOME</p></a>
+				</div>
 				<div id = "tab">
 					<p id = "tabText">PROJECTS</p>
 				</div>
-				<a href="Contact.html"><div id = "tab">
-					<p id = "tabText">CONTACT ME</p>
-				</div></a>
+				<div id = "tab">
+					<a href="Contact.html"><p id = "tabText">CONTACT ME</p></a>
+				</div>
 			</div>
 		</div>
 		<div id = "aboutMeHeader" >
@@ -292,6 +333,30 @@
 			</div>
 			<div id = "languagesRightColumn">
 				<p id = "languagesRightContent">Swift</p>
+			</div>
+		</div>
+
+		<div id = "bottomBar">
+			<div id = "bottomLeftColumn">
+				<p id = "bottomLeftHeader"> Quick Links </p>
+			</div>
+			<div id = "bottomRightColumn">
+				<p id = "bottomRightHeader"> Contact Me </p>
+			</div>
+			<div id = "bottomLeftColumn">
+				<a href = "Home.html"><p id = "bottomLeftContent"> Home </p></a>
+			</div>
+			<div id = "bottomRightColumn">
+				<a href = "http://www.github.com/asvinsritharan"><p id = "bottomRightContent"> GitHub </p></a>
+			</div>
+			<div id = "bottomLeftColumn">
+				<a href = "Projects.html"><p id = "bottomLeftContent"> Projects </p></a>
+			</div>
+			<div id = "bottomRightColumn">
+				<a href = "https://www.linkedin.com/in/asvin-sritharan-5a063a178/"><p id = "bottomRightContent"> LinkedIn </p></a>
+			</div>
+			<div id = "bottomLeftColumn" >
+				<a href = "Contact.html"><p id = "bottomLeftContent" style = "margin-bottom: 20"> Contact Me </p></a>
 			</div>
 		</div>
 
