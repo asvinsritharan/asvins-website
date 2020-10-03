@@ -6,9 +6,8 @@
 		<title>Projects</title>
 
 		<style type="text/css">
-
+			@font-face { font-family: Junicode; src: url('Junicode.ttf'); }
 			#header {
-				min-width:1200px;
 				width: 100%;
 				position: relative;
 				float: left;
@@ -16,6 +15,7 @@
 
 			#headerTitle{
 				width: 61%;
+				min-width: 410px;
 				position: relative;
 				float: left;
 				height: 150px;
@@ -25,19 +25,20 @@
 				position: relative;
 				float: left;
 				margin: 25 60 auto;
-				color: #FFFFFF;
-				font-family: 'Adamina', serif;
+				color: #E85A4F;
+				font-family: 'Junicode', Georgia, serif;
 				font-size: 400%;
 				text-align: left;
 			}
 			#tabPadding {
 				width: 39%;
+				min-width: 265px;
 				height: 150px;
 				position: relative;
 				float: left;
 			}
 			#tab {
-				height: 100px;
+				height: 150px;
 				width: 30%;
 				padding: 0 0 0 0;
 				position: relative;
@@ -45,8 +46,8 @@
 			}
 
 			#tabText {
-				color:#FFFFFF;
-				font-family: 'Adamina', serif;
+				color:#E85A4F;
+				font-family: 'Junicode', Georgia, serif;
 				font-size: 100%;
 				text-align: center;
 				margin-top: 60px;
@@ -56,24 +57,22 @@
 
 			#aboutMeHeader {
 
-				min-width:1200px;
 				width: 100%;
 				height: 50px;
 				position: relative;
 				float: left;
 			}
 			#aboutMeTitle {
-				color: #FFFFFF;
-				font-family: 'Adamina', serif;
+				color: #E85A4F;
+				font-family: 'Junicode', Georgia, serif;
 				font-weight: bold;
 				font-size: 150%;
 				text-align: center;
 
 			}
 			#aboutMeContentMargin {
-				color: #FFFFFF;
-				font-family: 'Adamina', serif;
-				min-width:1100px;
+				color: #8E8D8A;
+				font-family: 'Junicode', Georgia, serif;
 				margin-left: 50px;
 				margin-right: 50px;
 			}
@@ -85,24 +84,27 @@
 			}
 			#OtherHeader {
 
-				min-width:1200px;
 				width: 100%;
 				height: 50px;
 				position: relative;
 				float: left;
 			}
 			#languagesTitle {
-				color: #FFFFFF;
-				font-family: 'Adamina', serif;
+				color: #E98074;
+				font-family: 'Junicode', Georgia, serif;
 				font-weight: bold;
 				font-size: 120%;
 				text-align: center;
 
 			}
+			#imageMargin {
+				position: relative;
+				float: left;
+				width: 100%;
+			}
 			#languagesContentMargin {
-				color: #FFFFFF;
-				font-family: 'Adamina', serif;
-				min-width:1200px;
+				color: #8E8D8A;
+				font-family: 'Junicode', Georgia, serif;
 				width: 100%;
 				position: relative;
 				float: left;
@@ -128,8 +130,7 @@
 			}
 			#certificationContentMargin {
 				color: #FFFFFF;
-				font-family: 'Adamina', serif;
-				min-width:1200px;
+				font-family: 'Junicode', Georgia, serif;
 				width: 100%;
 				position: relative;
 				float: left;
@@ -141,11 +142,10 @@
 			#bottomBar {
 				width: 100%;
 				float: left;
-				background-color: #FFFFFF;
+				background-color: #E98074;
 				margin-top: 50px;
-				color: #b6b6b6;
-				font-family: 'Adamina', serif;
-				min-width:1200px;
+				color: #D8C3A5;
+				font-family: 'Junicode', Georgia, serif;
 			}
 			#bottomLeftColumn {
 				float: left;
@@ -180,186 +180,226 @@
 				padding-left: 5%;
 				margin-bottom: -5;
 			}
+			.image {
+				min-width: 200px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+				width: 100%;
+				max-width: 800px;
+
+			}
+			#bottomRightColumn a {
+					text-decoration: none;
+					color: #D8C3A5;
+			}
+			#bottomLeftColumn a {
+					text-decoration: none;
+					color: #D8C3A5;
+			}
+			html,body {
+    		height: 100%
+			}
+
+			#nonFooter {
+			    min-height: 100%;
+			    position:relative;
+					/* Firefox */
+			    min-height: -moz-calc(100% - 200px);
+			    /* WebKit */
+			    min-height: -webkit-calc(100% - 200px);
+			    /* Opera */
+			    min-height: -o-calc(100% - 200px);
+			    /* Standard */
+			    min-height: calc(100% - 200px);
+			}
+			#footer {
+			    height:200px;
+			    margin: 0;
+			    clear: both;
+			    width:100%;
+			    position: relative;
+			}
+			#pageHeader {
+
+				width: 100%;
+				height: 50px;
+				position: relative;
+				float: left;
+			}
+			#pageTitle {
+				color: #E85A4F;
+				font-family: 'Junicode', Georgia, serif;
+				font-weight: bold;
+				font-size: 150%;
+				text-align: center;
+			}
 
 
 		</style>
 	</head>
-	<body style = "margin: 0; background-color: #b6b6b6">
-		<div id = "header">
-			<div id = "headerTitle">
-				<p id= "titleText">Asvin's Site</p>
-			</div>
-			<div id = "tabPadding">
-				<div id = "tab">
-					<a href="Home.html"><p id = "tabText">HOME</p></a>
+	<body style = "margin: 0; background-color: #eae7dc">
+		<div id = "nonFooter">
+			<div id = "header">
+				<div id = "headerTitle">
+					<a href="index.html"><p id= "titleText">Asvin's Site</p></a>
 				</div>
-				<div id = "tab">
-					<p id = "tabText">PROJECTS</p>
+				<div id = "tabPadding">
+					<div id = "tab">
+						<a href="index.html"><p id = "tabText">HOME</p></a>
+					</div>
+					<div id = "tab">
+						<p id = "tabText">PROJECTS</p>
+					</div>
+					<div id = "tab">
+						<a href="Contact.html"><p id = "tabText">CONTACT ME</p></a>
+					</div>
 				</div>
-				<div id = "tab">
-					<a href="Contact.html"><p id = "tabText">CONTACT ME</p></a>
+			</div>
+			<div id = "aboutMeHeader" >
+				<p id = "aboutMeTitle">Projects</p>
+			</div>
+			<div id = "OtherHeader" style = "margin-top: 50">
+				<p id = "languagesTitle">Facial Recognition</p>
+			</div>
+			<div id = "imageMargin">
+				<img class = "image" src="FC_web.PNG" >
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Description:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">This is a script which learns faces based on facial characteristics. The user provides the script with a location which contains images of people, then labels them through prompts in the script. A picture can then by provided to the script of a person previously labelled by the user. The script will match facial characteristics of the face in the picture with the model created by the script to determine the matching label of the person in the user provided picture.</p>
+				</div>
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Language:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">Python</p>
+				</div>
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Machine Learning Technique:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">Principal Component Analysis</p>
+				</div>
+			</div>
+
+			<div id = "OtherHeader" style = "margin-top: 50">
+				<p id = "languagesTitle">Number Identifier</p>
+			</div>
+			<div id = "imageMargin">
+				<img class = "image" src="NI_web.PNG">
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Description:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent"> This script uses the MNIST written number dataset to train the KNN model. Upon completion of the creation of the model, the user can provide a number to the script when prompted, then the model will provide it's prediction to the number that was written on the image.</p>
+				</div>
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Language:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">Python</p>
+				</div>
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Machine Learning Technique:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">KNN (K Nearest Neighbours)</p>
+				</div>
+			</div>
+
+			<div id = "OtherHeader" style = "margin-top: 50">
+				<p id = "languagesTitle">Watermark Remover</p>
+			</div>
+			<div id = "imageMargin">
+				<img class = "image" src="WR_web.PNG">
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Description:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">Based on Radial Basis Functions, remove a watermark from a picture by plotting colors on a graph and removing the colors which are extremely different to the colors in the actual picture.</p>
+				</div>
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Language:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">MATLAB</p>
+				</div>
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Machine Learning Technique:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">Radial Basis Functions</p>
+				</div>
+			</div>
+
+			<div id = "OtherHeader" style = "margin-top: 50">
+				<p id = "languagesTitle">Rock Paper Scissors</p>
+			</div>
+			<div id = "imageMargin">
+				<img class = "image" src="RPS_web.png">
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Description:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">This is an app which allows you to play rock, paper, scissors against the CPU. This uses a random number generator to select rock, paper, or scissors for the CPU while you choose a move, then displays the winner.</p>
+				</div>
+			</div>
+			<div id = "languagesContentMargin">
+				<div id = "languagesLeftColumn">
+					<p id = "languagesLeftContent">Language:</p>
+				</div>
+				<div id = "languagesRightColumn">
+					<p id = "languagesRightContent">Swift</p>
 				</div>
 			</div>
 		</div>
-		<div id = "aboutMeHeader" >
-			<p id = "aboutMeTitle">Projects</p>
-		</div>
-		<div id = "OtherHeader" style = "margin-top: 50">
-			<p id = "languagesTitle">Facial Recognition</p>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Description:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">This is a script which learns faces based on facial characteristics. The user provides the script with a location which contains images of people, then labels them through prompts in the script. A picture can then by provided to the script of a person previously labelled by the user. The script will match facial characteristics of the face in the picture with the model created by the script to determine the matching label of the person in the user provided picture.</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Language:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">Python</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Machine Learning Technique:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">Principal Component Analysis</p>
+		<div id = "footer">
+			<div id = "bottomBar">
+				<div id = "bottomLeftColumn">
+					<p id = "bottomLeftHeader"> Quick Links </p>
+				</div>
+				<div id = "bottomRightColumn">
+					<p id = "bottomRightHeader"> Contact Me </p>
+				</div>
+				<div id = "bottomLeftColumn">
+					<a href = "Home.html"><p id = "bottomLeftContent"> Home </p></a>
+				</div>
+				<div id = "bottomRightColumn">
+					<a href = "http://www.github.com/asvinsritharan"><p id = "bottomRightContent"> GitHub </p></a>
+				</div>
+				<div id = "bottomLeftColumn">
+					<a href = "Projects.html"><p id = "bottomLeftContent"> Projects </p></a>
+				</div>
+				<div id = "bottomRightColumn">
+					<a href = "https://www.linkedin.com/in/asvin-sritharan-5a063a178/"><p id = "bottomRightContent"> LinkedIn </p></a>
+				</div>
+				<div id = "bottomLeftColumn" >
+					<a href = "Contact.html"><p id = "bottomLeftContent" style = "margin-bottom: 20"> Contact Me </p></a>
+				</div>
 			</div>
 		</div>
-
-		<div id = "OtherHeader" style = "margin-top: 50">
-			<p id = "languagesTitle">Number Identifier</p>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Description:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent"> This script uses the MNIST written number dataset to train the KNN model. Upon completion of the creation of the model, the user can provide a number to the script when prompted, then the model will provide it's prediction to the number that was written on the image.</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Language:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">Python</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Machine Learning Technique:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">KNN (K Nearest Neighbours)</p>
-			</div>
-		</div>
-
-		<div id = "OtherHeader" style = "margin-top: 50">
-			<p id = "languagesTitle">Watermark Remover</p>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Description:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">Based on Radial Basis Functions, remove a watermark from a picture by plotting colors on a graph and removing the colors which are extremely different to the colors in the actual picture.</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Language:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">MATLAB</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Machine Learning Technique:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">Radial Basis Functions</p>
-			</div>
-		</div>
-
-		<div id = "OtherHeader" style = "margin-top: 50">
-			<p id = "languagesTitle">Rating Predictor</p>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Description:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">This is a simple script which works on a limited number of profiles from a list of users used in model creation. This script allows you to pick a profile and a user from a pre-existing list of profiles and users to predict what the user would rate the profile based on the user's previous history and the profile's performance</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Language:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">R</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Machine Learning Technique:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">Multiple Linear Regression</p>
-			</div>
-		</div>
-
-		<div id = "OtherHeader" style = "margin-top: 50">
-			<p id = "languagesTitle">Flashlight App</p>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Description:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">This is an app which allows you to toggle on or off the torchlight on your iOS device. The screen turns white when the light is on, and black when the screen is off.</p>
-			</div>
-		</div>
-		<div id = "languagesContentMargin">
-			<div id = "languagesLeftColumn">
-				<p id = "languagesLeftContent">Language:</p>
-			</div>
-			<div id = "languagesRightColumn">
-				<p id = "languagesRightContent">Swift</p>
-			</div>
-		</div>
-
-		<div id = "bottomBar">
-			<div id = "bottomLeftColumn">
-				<p id = "bottomLeftHeader"> Quick Links </p>
-			</div>
-			<div id = "bottomRightColumn">
-				<p id = "bottomRightHeader"> Contact Me </p>
-			</div>
-			<div id = "bottomLeftColumn">
-				<a href = "Home.html"><p id = "bottomLeftContent"> Home </p></a>
-			</div>
-			<div id = "bottomRightColumn">
-				<a href = "http://www.github.com/asvinsritharan"><p id = "bottomRightContent"> GitHub </p></a>
-			</div>
-			<div id = "bottomLeftColumn">
-				<a href = "Projects.html"><p id = "bottomLeftContent"> Projects </p></a>
-			</div>
-			<div id = "bottomRightColumn">
-				<a href = "https://www.linkedin.com/in/asvin-sritharan-5a063a178/"><p id = "bottomRightContent"> LinkedIn </p></a>
-			</div>
-			<div id = "bottomLeftColumn" >
-				<a href = "Contact.html"><p id = "bottomLeftContent" style = "margin-bottom: 20"> Contact Me </p></a>
-			</div>
-		</div>
-
 
 
 	</body>
